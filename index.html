@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Crismusicaok</title>
+                <link rel="stylesheet" href="Style.css" />
+            </head>
+            <!----------------------------------------------------------------------------------->
+            <body>
+                <script type="text/javascript">
+                    var contador = 1;
+                    setInterval(function(){
+                        document.getElementById('radio' + contador).checked = true;
+                        contador++;
+                        if(contador > 2){
+                            contador = 1;
+                        }
+                    },5000);
+
+                    var windowsWidth = window.innerWidth;
+                    // Find the location of the current page and display it in an alert box
+                    //alert('Windows width' + windowsWidth);
+
+                   // while( windowsWidth <= 958){ }
+                </script>
+
+                <div id="header">
+                    <div id="nav">
+                        <div id="prueba">
+                            <div> <img id="logo" src="índice.jpg"> </div>
+                            <ul>
+                                        <li> <a id="discografia" href="#discografia">DISCOGRAFIA</a></li>
+                        
+                                        <li> <a id="proximo-disco" href="#proximos-shows">PROXIMOS SHOWS</a></li>
+                        
+                                        <li> <a id="fotos" href="#fotos" >FOTOS</a> </li>
+
+                                        <li> <a href="https://www.instagram.com/crismusicaok/?hl=es"><img id="icono-instagram" src="Trazado 3.svg"></a></li> 
+                        
+                                        <li> <a href="https://www.youtube.com/channel/UCeu_79z4K-MMS3ajw6anKkQ/featured"><img id="icono-youtube" src="Icon awesome-youtube.svg"></a></li>
+                        
+                                        <li> <a href="https://open.spotify.com/artist/3oKSP2g6JVnaXI57MxN41g?si=byBq-95ASFiOCm23-KFPaQ"><img id="icono-spotify"src="Icon awesome-spotify.svg"></a></li>    
+                                    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!----------------------------------------------------------------------------------->
+                <div id="content">
+                    
+                        <div id="discoN">
+                            <div class="slider">
+                                <div class="slides">
+                                    <!--radio buttons start-->
+                                    <input type="radio" name="radio-btn" id="radio1">
+                                    <input type="radio" name="radio-btn" id="radio2">
+
+                                    <div class="slide first">
+                                        <img src="disco1.jpg" alt="">
+                                    </div>
+                                    <div class="slide">
+                                        <img src="youtube.png" alt="">
+                                    </div>
+                                </div>
+                                <!--slide images end-->
+                                <!--automatic navigation start-->
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                </div>
+                                <!--automatic navigation end-->
+                            </div>
+                            <!--manual navigation start-->
+                            <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            </div>
+                        </div>
+
+                        <!--image slider end-->
+
+                        <div id="sector-elresto">
+                            <h2> Lorem ipsum </h2>
+                            <h3 id="proximos-discos"> Proximos Shows </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor iiqurta diam maat sees scelerisque eleifend donec pretium vulputate.</p>
+                            <h4 id="discografia"> Discografia </h4>
+                            <p>Duis ut diam quam nulla porttitor. Nibh tellus molestie nunc non blanditltricm id dsi lacus sed viverra. Nisi lacus sed viverra tellus. Enim sed faucibus turpis in eu mi bibendum.</p>
+                          </div>
+
+
+
+                   
+                </div>
+                <!----------------------------------------------------------------------------------->
+                <div id="footer">
+                    <p>&copy; Copyright 2011</p>
+                </div>
+            </body>
+        </html>
